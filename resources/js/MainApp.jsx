@@ -4,7 +4,7 @@ import Index from "./frontend/Index";
 
 function App() {
     return (
-        <div className="container">
+        <div>
             <Routes>
                 <Route path="/" element={<Index />} />
             </Routes>
