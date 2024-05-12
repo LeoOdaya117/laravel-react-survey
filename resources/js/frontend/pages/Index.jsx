@@ -44,8 +44,8 @@ function Index() {
                     Count
                 </button>
                 <p>
-                    Edit <code>resources/js/frontend/Index.jsx</code> and save
-                    to test HMR
+                    Edit <code>resources/js/frontend/pages/Index.jsx</code> and
+                    save to test HMR
                 </p>
             </div>
             <p className="read-the-docs">
