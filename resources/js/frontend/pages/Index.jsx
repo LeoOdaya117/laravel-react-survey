@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import laravelLogo from "./assets/svg/laravel.svg";
-import reactLogo from "./assets/svg/react.svg";
-import viteLogo from "./assets/svg/vite.svg";
-import tailwindLogo from "./assets/svg/tailwindcss.svg";
+import laravelLogo from "../assets/svg/laravel.svg";
+import reactLogo from "../assets/svg/react.svg";
+import viteLogo from "../assets/svg/vite.svg";
+import tailwindLogo from "../assets/svg/tailwindcss.svg";
 
 // import "./css/App.css";
 

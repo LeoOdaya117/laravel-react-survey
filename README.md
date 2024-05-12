@@ -25,7 +25,7 @@ npm install
 npm install --save-dev @vitejs/plugin-react react react-router-dom react-dom
 ```
 
-3. Change the file or replace the code of **'vite.config.js'** in Laravel Project
+3. Copy the file or replace the code of **'vite.config.js'** in Laravel Project
 
 ```
 // vite.config.js
@@ -45,7 +45,7 @@ export default defineConfig({
 });
 ```
 
-4. Change the file or replace the code of **'resources/views/welcome.blade.php'** in Laravel Project
+4. Copy the file or replace the code of **'resources/views/welcome.blade.php'** in Laravel Project
 
 ```
 <!doctype html>
@@ -78,7 +78,7 @@ export default defineConfig({
     ```
     npx tailwindcss init -p
     ```
--   Change the file or replace the code of **'tailwind.config.js'** in Laravel Project
+-   Copy the file or replace the code of **'tailwind.config.js'** in Laravel Project
 
 ```
 /** @type {import('tailwindcss').Config} */
@@ -104,7 +104,17 @@ export default {
 @tailwind utilities;
 ```
 
-6. Run the following command to view the changes
+6. For fix of 'Unable to directly navigate in webpage using URL (404 Not Found)'
+
+-   Copy the file or replace the code of **'routes/web.php'** in Laravel Project
+
+```
+Route::get('{reactRoutes}', function () {
+    return view('welcome');
+})->where('reactRoutes', '^((?!api).)*$'); // Don't show api query
+```
+
+7. Run the following command to view the changes
 
 -   To run Laravel Project
 
@@ -137,6 +147,7 @@ npx tailwindcss init -p
 3. Copy the following folder or files to your project:
 
 -   resources (folder)
+-   routes (folder)
 -   tailwind.config.js (file)
 -   vite.config.js
 
