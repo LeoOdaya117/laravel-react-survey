@@ -1,26 +1,30 @@
 import { createBrowserRouter } from "react-router-dom";
-import Index from "../pages/Index";
+import Login from "../pages/Login";
+import Dashboard from "../pages/Dashboard";
+import Signup from "../pages/Signup";
+import Surveys from "../pages/Surveys";
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <Index />,
+        element: <Login />,
     },
-    // Note: This is a template for using Layout
-    // {
-    //     path: "/",
-    //     element: <GuestLayout />,
-    //     children: [
-    //         {
-    //             path: "/signin",
-    //             element: <Signin />,
-    //         },
-    //         {
-    //             path: "/signup",
-    //             element: <Signup />,
-    //         },
-    //     ],
-    // },
+    {
+        path: "/dashboard",
+        element: <Dashboard />,
+    },
+    {
+        path: "/login",
+        element: <Login />,
+    },
+    {
+        path: "/signup",
+        element: <Signup />,
+    },
+    {
+        path: "/surveys",
+        element: <Surveys />,
+    },
 ]);
 
 export default router;
